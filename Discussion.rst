@@ -1,0 +1,10 @@
+Discussions
+=============
+
+首先我补全了orm中readings的表格结构，然后完成article和newword的mapper。
+
+user_mapper是最关键的部分。首先通过app中的调用可以知道user需要和newword相关联，所以我在properties中增加了一个relationship，对应newword_mapper。
+然后是实现read_article的功能，_read这个列表用来实现user和article的一对多关系，所以我需要再加一个relationship，对应articles_mapper，readings则作为关联的中间表。
+
+因此，在model的read_article方法中只需要向_read列表中插入article就可以实现功能，因为在orm中已经确认user和article的关联，并且声明readings作为这种关联的存储表。
+readings中除了自增的主键外只有两个外键，这一点也印证了他的作用。
