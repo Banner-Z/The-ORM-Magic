@@ -7,3 +7,8 @@ Abstract
 
 项目地址：
 
+https://the-orm-magic.readthedocs.io/en/latest/
+
+成员：
+
+201836900230    章浩科
