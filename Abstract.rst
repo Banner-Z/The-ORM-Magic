@@ -12,6 +12,3 @@ https://the-orm-magic.readthedocs.io/en/latest/
 成员：
 
 201836900230    章浩科
-
-123456
-13456
